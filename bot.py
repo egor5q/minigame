@@ -35,6 +35,7 @@ timers={}
 def spammm(m):
       if m.from_user.id==441399484:
            try:
+             print(str(m.chat.id))
              bot.pin_chat_message(m.chat.id, m.message_id, disable_notification=True)
            except:
              print('except')
